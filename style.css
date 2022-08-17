@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --background-clr: hsl(185, 75%, 39%);
+    --dark-gray-clr: hsl(0, 0%, 59%);
+    --white-clr: #fff;
+    --black-clr: #000;
+    --kumbh-sans: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--background-clr);
+    font-family: var(--kumbh-sans);
+}
+
+.pattern-top,
+.pattern-bottom {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: -999;
+}
+
+.profile-card {
+    background-color: var(--white-clr);
+}
+
+.cover-pic img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.profile-pic {
+    position: absolute;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.profile-pic img {
+    height: auto;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.details,
+.details > div {
+    display: flex;
+    align-items: center;
+    gap: .7vw;
+}
+
+.details { flex-direction: column; }
+
+hr { color: hsl(0, 0%, 0%, 15%); }
+
+.followers-likes-photos { 
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+.followers p,
+.likes p,
+.photos p { 
+    color: var(--dark-gray-clr); 
+    letter-spacing: .1vw;
+}
+
+@media (max-width: 400px) {
+    .pattern-top { transform: translate(-40%, -90%); }
+
+    .pattern-bottom { transform: translate(45%, 85%); }
+
+    .profile-card { 
+        border-radius: 4vw; 
+        width: 90%;
+        box-shadow: 2vw 2vw var(--black-clr);
+    }
+
+    .cover-pic img {
+        border-top-left-radius: 4vw;
+        border-top-right-radius: 4vw;
+    }
+
+    .profile-pic {
+        width: 28%;
+    }
+
+    .profile-pic img {
+        border: 1.5vw solid var(--white-clr);
+    }
+
+    .details,
+    .details > div { gap: 2.5vw; }
+
+    .details { padding: 20vw 0 8vw; }
+    
+    .username,
+    .age { font-size: 5vw; }
+    .region { font-size: 4vw; }
+
+    .followers-likes-photos {
+        padding: 6.5vw 0;
+        gap: 13vw;
+    }
+
+    .followers h2,
+    .likes h2,
+    .photos h2 { font-size: 5vw; }
+
+    .followers p,
+    .likes p,
+    .photos p { 
+        font-size: 3.5vw; 
+        margin-top: 1.8vw;
+    }
+}
+
+@media (min-width: 400.5px) and (max-width: 1000px) {
+    .pattern-top { transform: translate(-54%, -40%); }
+
+    .pattern-bottom { transform: translate(53%, 45%); }
+
+    .profile-card {
+        border-radius: 2vw;
+        width: 38%;
+        box-shadow: .8vw .8vw var(--black-clr);
+    }
+
+    .cover-pic img {
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    }
+
+    .profile-pic {
+        width: 12%;
+    }
+
+    .profile-pic img {
+        border: .7vw solid var(--white-clr);
+    }
+    
+    .details,
+    .details > div { gap: 1vw; }
+
+    .details { padding: 8.5vw 0 3vw; }
+
+    .username,
+    .age { font-size: 2.1vw; }
+    .region { font-size: 1.6vw; }
+
+    .followers-likes-photos {
+        padding: 3vw 0;
+        gap: 5.5vw;
+    }
+
+    .followers h2,
+    .likes h2,
+    .photos h2 { font-size: 2vw; }
+
+    .followers p,
+    .likes p,
+    .photos p {
+        font-size: 1.3vw;
+        margin-top: .75vw;
+    }
+}
+
+@media (min-width: 1000.5px) {
+    .pattern-top { transform: translate(-50%, -37%); }
+
+    .pattern-bottom { transform: translate(47%, 45%); }
+
+    .profile-card {
+        border-radius: 1vw;
+        width: 28%;
+        box-shadow: .5vw .7vw var(--black-clr);
+    }
+
+    .cover-pic img {
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+    }
+
+    .profile-pic {
+        width: 8.5%;
+    }
+
+    .profile-pic img {
+        border: 7px solid var(--white-clr);
+    }
+
+    .details,
+    .details > div { gap: .7vw; }
+
+    .details { padding: 5.5vw 0 2.5vw; }
+
+    .username,
+    .age { font-size: 1.3vw; }
+    .region { font-size: 1vw; }
+
+    .followers-likes-photos {
+        padding: 1.8vw 0;
+        gap: 4vw;
+    }
+
+    .followers h2,
+    .likes h2,
+    .photos h2 { font-size: 1.55vw; }
+
+    .followers p,
+    .likes p,
+    .photos p {
+        font-size: 1vw;
+        margin-top: .35vw;
+    }
+}
