@@ -82,9 +82,13 @@ hr { color: hsl(0, 0%, 0%, 15%); }
 }
 
 @media (max-width: 400px) {
+    /* Firefox Browser 
     .pattern-top { transform: translate(-40%, -90%); }
-
     .pattern-bottom { transform: translate(45%, 85%); }
+    */
+    
+    .pattern-top { transform: translate(-92%, -135%); }
+    .pattern-bottom { transform: translate(-0%, 28%); }
 
     .profile-card { 
         border-radius: 4vw; 
@@ -132,9 +136,13 @@ hr { color: hsl(0, 0%, 0%, 15%); }
 }
 
 @media (min-width: 400.5px) and (max-width: 1000px) {
+    /* Firefox Browser
     .pattern-top { transform: translate(-54%, -40%); }
-
     .pattern-bottom { transform: translate(53%, 45%); }
+    */
+    
+    .pattern-top { transform: translate(-100%, -93%); }
+    .pattern-bottom { transform: translate(0%, 0%); }
 
     .profile-card {
         border-radius: 2vw;
@@ -182,9 +190,13 @@ hr { color: hsl(0, 0%, 0%, 15%); }
 }
 
 @media (min-width: 1000.5px) {
+    /* Firefox Browser
     .pattern-top { transform: translate(-50%, -37%); }
-
     .pattern-bottom { transform: translate(47%, 45%); }
+    */
+    
+    .pattern-top { transform: translate(-100%, -87%); }
+    .pattern-bottom { transform: translate(-3%, -5%); }
 
     .profile-card {
         border-radius: 1vw;
